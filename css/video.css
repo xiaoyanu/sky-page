@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "DIY font";
+    src: url("https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.20/more/HarmonyOS_Sans_SC_Medium.subset.woff2") format("truetype");
+    /* 兼容Safari */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DIY font";
+}
+
+body {
+    background: url(../img/bg4.jpg) fixed no-repeat;
+    background-size: cover;
+    font-size: 18px;
+}
+
+/* 美化滚动条 */
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 0px;
+    height: 0px;
+}
+
+#box {
+    margin: 5% auto;
+    width: 900px;
+    height: 550px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    border: rgba(255, 255, 255, 0.4) 1px solid;
+    text-shadow: 0 0 15px rgb(0 0 0 / 50%);
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+    overflow: auto;
+    padding: 20px;
+}
+
+.video {
+    margin: 5px;
+    display: inline-block;
+}
+
+.video video {
+    width: 437px;
+    border-radius: 15px;
+    height: 230px;
+    box-shadow: rgb(0 0 0 / 60%) 2px 2px 10px;
+    transition: all 0.5s;
+}
+
+.video video:hover {
+    box-shadow: #616161 0 3px 10px;
+    transform: translate(calc(0px), calc(0px - 5px));
+    transition: all 0.5s;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 900px;
+    color: #FFF;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px 20px 0 0;
+    border: rgba(255, 255, 255, 0.4) 1px solid;
+    border-bottom-style: none;
+    text-shadow: 0 0 15px rgb(0 0 0 / 50%);
+    animation: jxdh2 0.5s linear;
+}
+
+#backhome {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border: black 1px solid;
+    border-radius: 10px;
+    width: 80px;
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#backhome:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+/* 适配手机端 */
+@media only screen and (max-width: 639px) {
+    #box {
+        margin: 20% auto;
+        width: 300px;
+        height: 500px;
+    }
+
+    #footer {
+        width: 300px;
+        position: absolute;
+        top: 0;
+        border-radius: 0 0 20px 20px;
+        border: rgba(255, 255, 255, 0.4) 1px solid;
+        border-bottom-style: none;
+        animation: jxdh3 0.5s linear;
+    }
+
+    .video video {
+        width: 290px;
+        height: 160px;
+    }
+}
+
+/* 渐显动画2 */
+@keyframes jxdh2 {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+/* 渐显动画2 */
+@keyframes jxdh3 {
+    0% {
+        transform: translateY(-60px);
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
