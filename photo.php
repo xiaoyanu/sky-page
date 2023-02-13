@@ -20,7 +20,7 @@
 		/*自定义 字体*/
 		@font-face {
 			font-family: "DIY font";
-			src: url("https://cdn1.tianli0.top/gh/xiaoyanu/file-test@2021.12.20/more/HarmonyOS_Sans_SC_Medium.subset.woff2") format("truetype");
+			src: url("https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.20/more/HarmonyOS_Sans_SC_Medium.subset.woff2") format("truetype");
 			/* 兼容Safari */
 		}
 
