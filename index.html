@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sky · 橘 / 清</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/ico" href="img/icon.png">
+</head>
+
+<body oncontextmenu="return false">
+    <img id="headimg" src="img/text.png" alt="">
+    <div id="main-box">
+        <!-- 双人头像 -->
+        <div id="touxiang">
+            <img src="img/t1.jpg" onmouseover="this.src='../img/t3.jpg'" onmouseout="this.src='../img/t1.jpg'" alt="橘笙"
+                id="img1" draggable="false">
+            <img id="love" src="img/love.svg" draggable="false">
+            <img src="img/t2.jpg" onmouseover="this.src='../img/t3.jpg'" onmouseout="this.src='../img/t2.jpg'" alt="清晨"
+                id="img2" draggable="false">
+        </div>
+        <div id="name">
+            <span class="name-style" id="name1">橘笙</span>
+            <span class="name-style" id="name2">清晨</span>
+        </div>
+        <!-- 计时器 -->
+        <div id="time">
+            <span id="timejishiqi"></span>
+        </div>
+        <!-- 小板块 -->
+        <div id="box">
+            <div class="smallbox" id="sb1">
+                <a href="photo.php">
+                    <img src="img/photos.svg" class="icon" draggable="false">
+                    相册
+                </a>
+            </div>
+            <div class="smallbox" id="sb2">
+			<!-- 
+				这一个按钮留给你们自由发挥 
+				小本本基于 【https://gitee.com/n0ts/heng】 开源项目
+			-->
+                <a href="#">
+                    <img src="img/book.svg" class="icon" draggable="false">
+                    小本本
+                </a>
+            </div>
+            <div class="smallbox" id="sb3">
+                <a href="video.php">
+                    <img src="img/camera.svg" class="icon" draggable="false">
+                    视频
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //计时器
+        function timingTime() {
+            // 开始时间 格式： 年-月-日 00:00:00
+            let start = '2022-3-19 12:21:25'
+            let startTime = new Date(start.replace(/-/g, '/')).getTime()
+            let currentTime = new Date().getTime()
+            let difference = currentTime - startTime
+            let m = Math.floor(difference / (1000))
+            let mm = m % 60  // 秒
+            let f = Math.floor(m / 60)
+            let ff = f % 60 // 分钟
+            let s = Math.floor(f / 60) // 小时
+            let ss = s % 24
+            let day = Math.floor(s / 24) // 天数
+            return "已经一起度过<br>" +
+                " <font color=#FF5722>" + day + "</font> 天" +
+                " <font color=#FFA000>" + ss + "</font> 小时" +
+                " <font color=#03A9F4>" + ff + "</font> 分钟" +
+                " <font color=#448AFF>" + mm + "</font> 秒"
+        }
+        setInterval(() => {
+            document.getElementById('timejishiqi').innerHTML = timingTime()
+        }, 1000)
+        var _0x213458=_0x3cfa;function _0x3cfa(_0x4f1c94,_0xbf7918){var _0x19a75b=_0x5213();return _0x3cfa=function(_0x376e24,_0x4c76ee){_0x376e24=_0x376e24-(0x3*0x9ad+-0x1d01+0x175*0x1);var _0x1adfb8=_0x19a75b[_0x376e24];return _0x1adfb8;},_0x3cfa(_0x4f1c94,_0xbf7918);}(function(_0x2984ec,_0x21653a){var _0x491e67=_0x3cfa,_0x2d3316=_0x2984ec();while(!![]){try{var _0xdcfb0d=parseInt(_0x491e67(0x17c))/(-0x264d*0x1+-0x2*-0xf21+-0x406*-0x2)+-parseInt(_0x491e67(0x185))/(0xae7+-0x1*-0x1723+0x1104*-0x2)*(parseInt(_0x491e67(0x17f))/(0x1839+-0x18e4+0xae))+-parseInt(_0x491e67(0x18c))/(-0x24f6+0x24ea+0x10)*(-parseInt(_0x491e67(0x18f))/(-0x755*-0x1+-0xf11*-0x1+-0x1661))+parseInt(_0x491e67(0x186))/(0x2278+-0x3*0x611+-0x103f*0x1)+parseInt(_0x491e67(0x17b))/(-0x2*-0x10f5+-0xcf8*-0x1+0x2edb*-0x1)+-parseInt(_0x491e67(0x195))/(-0x10d3+0x66e+0xa6d)*(-parseInt(_0x491e67(0x184))/(-0xb1e+0x2049+-0x5*0x43a))+parseInt(_0x491e67(0x183))/(-0x118f+-0x18a*-0xd+-0x269)*(-parseInt(_0x491e67(0x17d))/(0x164+-0x4bb*0x4+0x1193*0x1));if(_0xdcfb0d===_0x21653a)break;else _0x2d3316['push'](_0x2d3316['shift']());}catch(_0x2029ab){_0x2d3316['push'](_0x2d3316['shift']());}}}(_0x5213,-0x47171+0x10897f+-0x29632),console[_0x213458(0x18b)](_0x213458(0x197)+_0x213458(0x187)+_0x213458(0x198)+_0x213458(0x18d)+_0x213458(0x193)+_0x213458(0x180),_0x213458(0x199)+_0x213458(0x188)+_0x213458(0x18a)+_0x213458(0x191)+_0x213458(0x190)+_0x213458(0x194)+_0x213458(0x181)+_0x213458(0x192),_0x213458(0x189)+_0x213458(0x188)+_0x213458(0x18a)+_0x213458(0x191)+_0x213458(0x182)+_0x213458(0x17e)+_0x213458(0x181)+_0x213458(0x196)+_0x213458(0x18e)));function _0x5213(){var _0x49026a=['f,#ffffff)','1632027tDuNOG','sky-page',';padding:5','deg,#44e9f','2797760PDmtOk','9FVRwEs','2gxsLrc','347910AKqzQv','站\x20By：小言u\x20%',';backgroun','color:#000','d:linear-g','log','20zuIlKC','github.com','x\x200px;','1200285wZCNZL','deg,#448bf','radient(90','px\x200;','/xiaoyanu/','f,#44e9ff)','6428752zgDDrZ','px\x2010px\x205p','\x0a\x0a\x0a\x20%c\x20光遇小','c\x20https://','color:#fff','222439fmoofP','752092LziURi','66dVVBFo'];_0x5213=function(){return _0x49026a;};return _0x5213();}
+    </script>
+</body>
+
+</html>
