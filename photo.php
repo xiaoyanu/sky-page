@@ -117,7 +117,7 @@
 						<span style="color: #b5b5b5; font-size: 0.8em;">
 						</span>
 						<p class="copyright">
-							<b>&copy; 光遇小站 sky.zxz.ee</b> &nbsp; By 橘笙 / 清晨.
+							<b>&copy; 光遇小站 </b> &nbsp; By 橘笙 / 清晨.
 						</p>
 						<div>
 						</div>
